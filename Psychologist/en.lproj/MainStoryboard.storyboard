@@ -11,7 +11,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="PsychologistViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aJo-cp-KEx">
@@ -76,11 +76,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Mr-vc-VUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="o6R-iG-5Tk" customClass="happinessViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A6M-cL-O9P">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="dw5-1L-cLE" customClass="FaceView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -101,7 +101,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPg-vt-NP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="f7H-HY-r4o" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZhM-Xk-pCr">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2VR-rA-wCV">
@@ -137,7 +137,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Save" id="lZL-io-vLf"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="Psychologist" id="SXV-CC-0LG"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="24" y="-207"/>
@@ -146,13 +150,17 @@
         <scene sceneID="ndA-v0-H0V">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="td1-eF-hZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController id="cWj-dY-7en" sceneMemberID="viewController">
+                <navigationController toolbarHidden="NO" id="cWj-dY-7en" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Cu-Af-0z1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="lrf-Y6-T1n">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="f7H-HY-r4o" kind="relationship" relationship="rootViewController" id="vPl-Cq-av5"/>
                     </connections>
@@ -166,11 +174,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qyB-V1-c8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Hj4-qt-7cv" customClass="happinessViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Jl-OK-BhC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="wqh-ZW-aB6" customClass="FaceView">
-                                <rect key="frame" x="0.0" y="8" width="320" height="359"/>
+                                <rect key="frame" x="0.0" y="8" width="320" height="315"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -203,11 +211,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fR-Aj-Fyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="hYn-qf-Ybo" customClass="happinessViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kZz-RO-2g0">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="luH-5y-Qfh" customClass="FaceView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -228,7 +236,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aVT-6S-P0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="jyi-5K-wEg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rSh-4R-g1v">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cYL-hd-ERX">
@@ -290,11 +298,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgm-Xv-urh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="592-3f-PIn" customClass="happinessViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Ap-qF-3Jc">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="nbP-2M-i52" customClass="FaceView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
