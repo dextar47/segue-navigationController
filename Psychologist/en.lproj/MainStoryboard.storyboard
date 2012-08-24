@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
-        <!--Psychologist View Controller-->
+        <!--Psychologist View Controller - Engineer Javaid-->
         <scene sceneID="5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -62,13 +62,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="l4r-zg-276"/>
+                    <navigationItem key="navigationItem" title="Engineer Javaid" id="l4r-zg-276"/>
                     <connections>
                         <segue destination="o6R-iG-5Tk" kind="push" identifier="ShowDiagnosis" id="vXz-a3-jHa"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="637" y="63"/>
+            <point key="canvasLocation" x="1067" y="461"/>
         </scene>
         <!--Happiness View Controller-->
         <scene sceneID="7js-3F-m16">
@@ -93,7 +93,54 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1017" y="64"/>
+            <point key="canvasLocation" x="1777" y="490"/>
+        </scene>
+        <!--View Controller - Psychologist-->
+        <scene sceneID="FgI-su-01Z">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kPg-vt-NP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="f7H-HY-r4o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZhM-Xk-pCr">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2VR-rA-wCV">
+                                <rect key="frame" x="124" y="88" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="one">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jyi-5K-wEg" kind="push" id="UjQ-zp-fPS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Ft-Bb-yXB">
+                                <rect key="frame" x="124" y="173" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="two">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="push" id="3tq-WE-M4a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Psychologist" id="SXV-CC-0LG"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="24" y="-207"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ndA-v0-H0V">
@@ -107,11 +154,160 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="rootViewController" id="6JM-DW-iXL"/>
+                        <segue destination="f7H-HY-r4o" kind="relationship" relationship="rootViewController" id="vPl-Cq-av5"/>
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="111" y="63"/>
+            <point key="canvasLocation" x="129" y="517"/>
+        </scene>
+        <!--Happiness View Controller-->
+        <scene sceneID="b6g-6g-FhB">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyB-V1-c8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Hj4-qt-7cv" customClass="happinessViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Jl-OK-BhC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="wqh-ZW-aB6" customClass="FaceView">
+                                <rect key="frame" x="0.0" y="8" width="320" height="359"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9b6-cH-X8a">
+                                <rect key="frame" x="20" y="375" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Go to website.">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PWU-DL-aEZ"/>
+                    <connections>
+                        <outlet property="fView" destination="wqh-ZW-aB6" id="KpS-ld-kDH"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1257" y="-156"/>
+        </scene>
+        <!--Happiness View Controller-->
+        <scene sceneID="EBJ-nt-eiO">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fR-Aj-Fyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="hYn-qf-Ybo" customClass="happinessViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kZz-RO-2g0">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="luH-5y-Qfh" customClass="FaceView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mO5-yT-nUW"/>
+                    <connections>
+                        <outlet property="fView" destination="luH-5y-Qfh" id="42b-DI-DN3"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1315" y="100"/>
+        </scene>
+        <!--View Controller - Dr. Ehsan-->
+        <scene sceneID="6gZ-yv-BWj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVT-6S-P0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="jyi-5K-wEg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rSh-4R-g1v">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cYL-hd-ERX">
+                                <rect key="frame" x="124" y="72" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="hello">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="592-3f-PIn" kind="push" id="0kQ-tt-OIL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aE0-p0-eFK">
+                                <rect key="frame" x="124" y="133" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="hi">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hj4-qt-7cv" kind="push" id="3U0-Dm-AfF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E36-kG-Chu">
+                                <rect key="frame" x="124" y="199" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="AOA">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hYn-qf-Ybo" kind="push" id="ReT-hb-wjC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dr. Ehsan" id="Zdu-AS-zQ5"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="544" y="-249"/>
+        </scene>
+        <!--Happiness View Controller-->
+        <scene sceneID="wy7-5L-D0T">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgm-Xv-urh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="592-3f-PIn" customClass="happinessViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Ap-qF-3Jc">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="nbP-2M-i52" customClass="FaceView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jKA-Ud-p8n"/>
+                    <connections>
+                        <outlet property="fView" destination="nbP-2M-i52" id="vUT-Zv-UWu"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1265" y="-484"/>
         </scene>
     </scenes>
     <classes>
