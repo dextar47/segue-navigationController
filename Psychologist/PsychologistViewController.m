@@ -26,9 +26,20 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
+- (happinessViewController *) giveHappinessViewController {
+    id hvc = [self.splitViewController.viewControllers lastObject];
+    if(![hvc isKindOfClass:[happinessViewController class]]) {
+        hvc = nil;
+    }
+    return hvc;
+}
 - (void) setAndShowDiagnosis:(int) number {
     self.diagnosis = number;
-    [self performSegueWithIdentifier:@"ShowDiagnosis" sender:self];
+    if([self giveHappinessViewController]) {
+        [[self giveHappinessViewController] setHappiness:self.diagnosis];
+    } else {
+        [self performSegueWithIdentifier:@"ShowDiagnosis" sender:self];
+    }
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:@"ShowDiagnosis"]) {
@@ -47,7 +58,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return YES;
 }
 
 @end
