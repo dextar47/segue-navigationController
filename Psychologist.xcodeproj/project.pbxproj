@@ -42,6 +42,7 @@
 		B69889A415E7F74A00B06698 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 		B69889A615E7FAC700B06698 /* RotateableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateableViewController.h; sourceTree = "<group>"; };
 		B69889A715E7FAC700B06698 /* RotateableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateableViewController.m; sourceTree = "<group>"; };
+		B6A7371B15E8A70800418FD9 /* UIToolbarButtonPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIToolbarButtonPresenter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 				B69889A415E7F74A00B06698 /* iPad.storyboard */,
 				B69889A615E7FAC700B06698 /* RotateableViewController.h */,
 				B69889A715E7FAC700B06698 /* RotateableViewController.m */,
+				B6A7371B15E8A70800418FD9 /* UIToolbarButtonPresenter.h */,
 				B640F1A715E7D34B008C91DA /* PsychologistAppDelegate.h */,
 				B640F1A815E7D34B008C91DA /* PsychologistAppDelegate.m */,
 				B640F1AA15E7D34B008C91DA /* iPhone.storyboard */,

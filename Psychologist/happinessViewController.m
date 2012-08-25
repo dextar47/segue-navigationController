@@ -19,6 +19,18 @@
 @implementation happinessViewController
 @synthesize fView = _fView;
 @synthesize happiness = _happiness;
+@synthesize btn = _btn;
+@synthesize uiToolBar = _uiToolBar;
+
+- (void)setBtn:(UIBarButtonItem *)btn {
+    if(_btn != btn) {
+        NSMutableArray *simpleArr = [self.uiToolBar.items mutableCopy];
+        if(_btn) [simpleArr removeObject:_btn];
+        if(btn) [simpleArr insertObject:btn atIndex:0];
+        self.uiToolBar.items = simpleArr;
+        _btn = btn;
+    }
+}
 
 -(void) setHappiness:(int)happiness {
     _happiness = happiness;

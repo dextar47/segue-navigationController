@@ -15,16 +15,22 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="Gp6-u9-lBr" customClass="FaceView">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                <rect key="frame" x="0.0" y="44" width="768" height="960"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ehj-Y3-GFb">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <connections>
                         <outlet property="fView" destination="Gp6-u9-lBr" id="xI7-Mc-nDq"/>
+                        <outlet property="uiToolBar" destination="ehj-Y3-GFb" id="WoJ-G6-lHi"/>
                     </connections>
                 </viewController>
             </objects>
@@ -246,6 +252,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/happinessViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="fView" candidateClass="FaceView"/>
+                <relationship kind="outlet" name="uiToolBar" candidateClass="UIToolbar"/>
             </relationships>
         </class>
     </classes>

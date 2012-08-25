@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface happinessViewController : UIViewController
-
+#import "UIToolbarButtonPresenter.h"
+@interface happinessViewController : UIViewController <UIToolbarButtonPresenter>
+@property (nonatomic, weak) IBOutlet UIToolbar *uiToolBar;
 @property (nonatomic) int happiness;
 
 @end

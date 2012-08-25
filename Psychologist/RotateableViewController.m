@@ -7,6 +7,7 @@
 //
 
 #import "RotateableViewController.h"
+#import "UIToolbarButtonPresenter.h"
 
 @interface RotateableViewController ()
 
@@ -19,7 +20,25 @@
     self.splitViewController.delegate = self; 
 }
 - (BOOL)splitViewController:(UISplitViewController *)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation {
-    return NO;
+    return [self buttonPresenter] ? UIInterfaceOrientationIsPortrait(orientation) :  NO;
+}
+
+- (void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc {
+    barButtonItem.title = @"popOver";
+    [self buttonPresenter].btn = barButtonItem;
+}
+
+- (id <UIToolbarButtonPresenter>)buttonPresenter {
+    id detailsMvc = [self.splitViewController.viewControllers lastObject];
+    if(![detailsMvc conformsToProtocol: @protocol(UIToolbarButtonPresenter)]) {
+        detailsMvc = nil;
+    }
+    return detailsMvc;
+}
+
+- (void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
+        NSLog(@"%@",barButtonItem);
+    [self buttonPresenter].btn = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
