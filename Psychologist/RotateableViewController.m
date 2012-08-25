@@ -37,7 +37,6 @@
 }
 
 - (void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
-        NSLog(@"%@",barButtonItem);
     [self buttonPresenter].btn = nil;
 }
 
